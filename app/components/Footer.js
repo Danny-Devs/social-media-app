@@ -1,30 +1,31 @@
-import React from "react"
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <footer className="border-top text-center small text-muted py-3">
+    <footer className='border-top text-center small text-muted py-3'>
       <p>
-        <a href="/" className="mx-1">
-          Home
-        </a>{" "}
-        |{" "}
-        <a className="mx-1" href="/about-us">
+        <Link to='/' className='mx-1'>
+          Home{' '}
+        </Link>
+        |{' '}
+        <Link className='mx-1' to='/about-us'>
           About Us
-        </a>{" "}
-        |{" "}
-        <a className="mx-1" href="/terms">
+        </Link>{' '}
+        |{' '}
+        <Link className='mx-1' to='/terms'>
           Terms
-        </a>
+        </Link>
       </p>
-      <p className="m-0">
-        Copyright &copy; {new Date().getFullYear()}{" "}
-        <a href="/" className="text-muted">
+      <p className='m-0'>
+        Copyright &copy; {new Date().getFullYear()}{' '}
+        <a href='/' className='text-muted'>
           ComplexApp
         </a>
         . All rights reserved.
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
